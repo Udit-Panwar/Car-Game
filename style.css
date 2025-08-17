@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #2e8b57, #228b22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  color: white;
+}
+
+.hud {
+  position: fixed;
+  top: 50%;          
+  left: 20px;       
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.game-container {
+  background: #333;
+  border: 4px solid #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+canvas {
+  display: block;
+  background: black;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background: #fff;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
